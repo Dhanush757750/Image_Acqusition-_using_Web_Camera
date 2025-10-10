@@ -138,8 +138,5 @@ cv2.destroyAllWindows()
 </br>
 
 
-
-
-
 ## Result:
 Thus the image is accessed from webcamera and displayed using openCV.
