@@ -11,27 +11,31 @@ iv) Rotate and display the video
 Anaconda - Python 3.7
 ## Algorithm
 ### Step 1:
+Use cv2.VideoCapture(0) to access web camera
 <br>
 
 ### Step 2:
+Use cv2.imread to read the video or image.
 <br>
 
 ### Step 3:
+Use cv2.imwrite to save the image.
 <br>
 
 ### Step 4:
+Use cv2.imshow to show the video.
 <br>
 
 ### Step 5:
+End the program and close the output video window by pressing 'q'.
 <br>
 
 ## Program:
-``` Python
 ### Developed By: C.DHANUSH
 ### Register No:212224040066
 
 ## i) Write the frame as JPG file
-
+```
 import cv2
 viedoCaptureObject=cv2.VideoCapture(0)
 
@@ -40,9 +44,9 @@ cv2.imwrite("webcam_img.jpg",frame)
 
 viedoCaptureObject.release()
 cv2.destroyAllWindows()
-
+```
 ## ii) Display the video
-
+```
 import numpy as np
 import cv2
 
@@ -56,9 +60,9 @@ cv2.waitKey(10000)
 
 cap.release()
 cv2.destroyAllWindows()
-
+```
 ## iii) Display the video by resizing the window
-
+```
 import numpy as np
 import cv2
 cap=cv2.VideoCapture(0)
@@ -82,9 +86,9 @@ cv2.imwrite('captured_image1.jpg', image)
 
 cap.release()
 cv2.destroyAllWindows()
-
+```
 ## iv) Rotate and display the video
-
+```
 import numpy as np
 import cv2
 cap=cv2.VideoCapture(0)
@@ -113,30 +117,20 @@ cv2.destroyAllWindows()
 ## Output
 
 ### i) Write the frame as JPG image
-</br>
-![IMAGE1](https://github.com/user-attachments/assets/8d6a5ff8-60fd-4075-b5dc-c553d65bf499)
-
+![IMAGE1](https://github.com/user-attachments/assets/41478f19-85d5-4242-8459-f68290c5c79d)
 </br>
 
 ### ii) Display the video
-</br>
 ![IMAGE1](https://github.com/user-attachments/assets/bd6f1e13-d26f-4864-b2c3-3cd08262ad5a)
-
 </br>
 
 ### iii) Display the video by resizing the window
-</br>
 ![IMAGE3](https://github.com/user-attachments/assets/284b950e-ce01-4304-9461-8f9da444fcb2)
-
 </br>
-
 
 ### iv) Rotate and display the video
+![IMAGE4](https://github.com/user-attachments/assets/acd308d2-6ed4-4e44-af02-e3bf6cce8025)
 </br>
-![Uploading IMAGE4.jpg…]()
-
-</br>
-
 
 ## Result:
 Thus the image is accessed from webcamera and displayed using openCV.
